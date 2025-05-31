@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
-def home(request):
+def inicio(request):
     return render(request, 'miapp/index.html')
