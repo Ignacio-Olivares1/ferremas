@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Herramientas</title>
+  {% load static %}
+<link rel="stylesheet" href="{% static 'ferremas/style.css' %}" />
+
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Herramientas</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="search-section">
+      <input type="text" placeholder="Buscar productos..." class="search-input" />
+      <button class="search-button">Buscar</button>
+    </section>
+
+    <section class="products">
+      <article class="product-card">
+        <img src="https://via.placeholder.com/250x200?text=Producto+1" alt="Producto 1" />
+        <h3>Taladro inalámbrico</h3>
+        <p class="price">$59.990</p>
+        <button class="btn-buy">Comprar</button>
+      </article>
+
+      <article class="product-card">
+        <img src="https://via.placeholder.com/250x200?text=Producto+2" alt="Producto 2" />
+        <h3>Set de llaves inglesas</h3>
+        <p class="price">$24.990</p>
+        <button class="btn-buy">Comprar</button>
+      </article>
+
+      <article class="product-card">
+        <img src="https://via.placeholder.com/250x200?text=Producto+3" alt="Producto 3" />
+        <h3>Sierra eléctrica</h3>
+        <p class="price">$89.990</p>
+        <button class="btn-buy">Comprar</button>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Herramientas.cl - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
