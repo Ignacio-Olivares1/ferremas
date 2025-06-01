@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Herramientas</title>
   {% load static %}
-<link rel="stylesheet" href="{% static 'ferremas/style.css' %}" />
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
 
 <body>
   <header class="header">
@@ -19,6 +19,7 @@
           <li><a href="#">Ofertas</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>
+                  <button id="convertBtn">Convertir precios a USD</button>
       </nav>
     </div>
   </header>
@@ -57,4 +58,5 @@
     <p>© 2025 Herramientas.cl - Todos los derechos reservados</p>
   </footer>
 </body>
+<script src="{% static 'js/dolar.js' %}"></script>
 </html>
